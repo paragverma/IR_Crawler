@@ -4,11 +4,12 @@
 
 ### Installation Instructions
 1. Install Drupal 7.x
-2. Copy 'elasticsearch' folder to *root*/sites/all/modules
+2. Copy 'elasticsearch' and 'pathauto' folders to *root*/sites/all/modules
 3. Log in to Drupal as an administrator
-4. Go to modules page and activate 'Elasticsearch' module
-5. Go to Configuaration -> Search Settings and Activate Elasticsearch as a Search Module
-6. Also set it as the default search module
+4. Install `Token` module from here - https://www.drupal.org/project/token
+5. Go to modules page and activate 'Elasticsearch' module
+6. Go to Configuaration -> Search Settings and Activate Elasticsearch as a Search Module
+7. Also set it as the default search module
 
 ### elasticsearch.module
 - elasticsearch_menu()
