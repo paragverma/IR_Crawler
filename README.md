@@ -1,2 +1,1 @@
-Simple php crawler and simple drupal plugin for search.
-please refer readmeImp for important instructions
+Drupal Module for Fetching Search Results from ElasticSearch instead of Drupal DB:
