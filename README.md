@@ -1,8 +1,8 @@
-#Drupal Module for Fetching Search Results from ElasticSearch instead of Drupal DB#
+#Drupal Module for Fetching Search Results from ElasticSearch instead of Drupal DB
 
-##Documentation for Elasticsearch Module##
+##Documentation for Elasticsearch Module
 
-###Installation Instructions###
+###Installation Instructions
 1. Install Drupal 7.x
 2. Copy 'elasticsearch' folder to *root*/sites/all/modules
 3. Log in to Drupal as an administrator
@@ -10,7 +10,7 @@
 5. Go to Configuaration -> Search Settings and Activate Elasticsearch as a Search Module
 6. Also set it as the default search module
 
-###elasticsearch.module###
+###elasticsearch.module
 -elasticsearch_menu()
 -mylog($logstring)
 -search_it($query)
@@ -18,17 +18,17 @@
 -elasticsearch_search_execute($keys = NULL, $conditions = NULL)
 -elasticsearch_search_info()
 
-####elasticsearch_menu()####
+####elasticsearch_menu()
 
 This is the Drupal Hook which registers `hostname`/elasticsearch/search as a route in the Drupal ecosystem.
 It returns an array containing the title, path, permissions, callback function and callback type associated with this route.
 Currently, it registers `hostname`/elasticsearch/search as a route which is visible on the Navigation Bar of any user.
 
-####mylog($logstring)####
+####mylog($logstring)
 
 A logging utlity which logs into a file named `log.txt` in the Elasticsearch module folder. This function can be used in other modules as well.
 
-####search_it($query)####
+####search_it($query)
 
 This function takes a string argument and returns a JSON formatted string. The argument string is sent as a query to the Elasticsearch instance. The parameters for the ES instance are `host`http://localhost:9200 `credentials` elastic:changeme `method` POST.
 
